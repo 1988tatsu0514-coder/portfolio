@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Player from "@vimeo/player";
 
 const VIMEO_ID = "1201101227";
@@ -8,13 +8,10 @@ const RESTART_BEFORE_END = 6;
 
 export default function Hero() {
   const iframeRef = useRef<HTMLIFrameElement>(null);
-  const playerRef = useRef<Player | null>(null);
-  const [muted, setMuted] = useState(true);
 
   useEffect(() => {
     if (!iframeRef.current) return;
     const player = new Player(iframeRef.current);
-    playerRef.current = player;
 
     let duration = 0;
     let restarting = false;
@@ -36,16 +33,6 @@ export default function Hero() {
 
     return () => { player.destroy(); };
   }, []);
-
-  const toggleMute = async () => {
-    if (!playerRef.current) return;
-    const newMuted = !muted;
-    setMuted(newMuted);
-    try {
-      await playerRef.current.setMuted(newMuted);
-      if (!newMuted) await playerRef.current.setVolume(1);
-    } catch { /* ignore */ }
-  };
 
   return (
     <section className="relative w-full h-screen bg-black overflow-hidden">
@@ -73,21 +60,9 @@ export default function Hero() {
         <p className="text-xs tracking-[0.25em] uppercase text-neutral-500">
           Showreel 2024
         </p>
-        <div className="flex items-center gap-8">
-          <button
-            onClick={toggleMute}
-            className="text-xs tracking-[0.25em] uppercase text-neutral-500 hover:text-white transition-colors duration-300 flex items-center gap-2"
-          >
-            {muted ? (
-              <><span>🔇</span><span>Sound Off</span></>
-            ) : (
-              <><span>🔊</span><span>Sound On</span></>
-            )}
-          </button>
-          <p className="text-xs tracking-[0.25em] uppercase text-neutral-500">
-            ↓ Scroll
-          </p>
-        </div>
+        <p className="text-xs tracking-[0.25em] uppercase text-neutral-500">
+          ↓ Scroll
+        </p>
       </div>
     </section>
   );
