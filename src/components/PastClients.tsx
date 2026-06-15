@@ -33,10 +33,10 @@ export default function PastClients() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8">
+        <div className="flex flex-wrap gap-x-4 gap-y-3 md:grid md:grid-cols-4 md:gap-x-8 md:gap-y-8">
           {clients.map((client) => (
             <div key={client} className="group">
-              <span className="text-xs tracking-[0.12em] uppercase font-light text-white opacity-20 group-hover:opacity-100 transition-all duration-300 cursor-default leading-loose">
+              <span className="text-[10px] md:text-xs tracking-[0.08em] md:tracking-[0.12em] uppercase font-light text-white opacity-20 group-hover:opacity-100 transition-all duration-300 cursor-default">
                 {client}
               </span>
             </div>
