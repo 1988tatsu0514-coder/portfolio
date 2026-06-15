@@ -29,7 +29,7 @@ export default function PastClients() {
             </p>
           </div>
           <p className="text-xs tracking-[0.25em] uppercase text-white/60">
-            {clients.length} Collaborations
+            & More
           </p>
         </div>
 

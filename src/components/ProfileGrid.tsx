@@ -4,10 +4,14 @@ export default function ProfileGrid() {
       <div className="max-w-7xl mx-auto">
 
         {/* 写真（モバイルのみ表示） */}
-        <div
-          className="md:hidden w-full aspect-[4/5] bg-cover bg-top bg-no-repeat bg-neutral-950 mb-6"
+        <div className="md:hidden relative w-full aspect-[4/5] bg-cover bg-top bg-no-repeat bg-neutral-950 mb-6"
           style={{ backgroundImage: "url('/images/IMG_1316_Original%202.jpg')" }}
-        />
+        >
+          <div className="absolute bottom-0 left-0 right-0 px-4 pb-4 pt-12 bg-gradient-to-t from-black/70 to-transparent">
+            <p className="text-xs tracking-[0.25em] uppercase text-white">Tatsunosuke Nishimura</p>
+            <p className="text-[10px] tracking-[0.2em] uppercase text-white/50 mt-1">Video Producer · Cinematographer</p>
+          </div>
+        </div>
 
         {/* 上段：写真(PC) + Roles / Skills / Interests */}
         <div className="grid grid-cols-3 md:grid-cols-4 gap-4 md:gap-12 mb-6 md:mb-8">
