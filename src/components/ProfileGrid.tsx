@@ -1,10 +1,10 @@
 export default function ProfileGrid() {
   return (
-    <section className="px-8 md:px-24 py-16 md:py-32 border-t border-neutral-950">
+    <section className="px-8 md:px-24 py-16 md:py-32 border-t border-neutral-200">
       <div className="max-w-7xl mx-auto">
 
         {/* 写真（モバイルのみ表示） */}
-        <div className="md:hidden relative w-full aspect-[4/5] bg-cover bg-top bg-no-repeat bg-neutral-950 mb-6"
+        <div className="md:hidden relative w-full aspect-[4/5] bg-cover bg-top bg-no-repeat bg-neutral-100 mb-6"
           style={{ backgroundImage: "url('/images/IMG_1316_Original%202.jpg')" }}
         >
           <div className="absolute bottom-0 left-0 right-0 px-4 pb-4 pt-12 bg-gradient-to-t from-black/70 to-transparent">
@@ -17,42 +17,42 @@ export default function ProfileGrid() {
         <div className="grid grid-cols-3 md:grid-cols-4 gap-4 md:gap-12 mb-6 md:mb-8">
 
           <div
-            className="hidden md:block w-full aspect-[3/4] bg-cover bg-top bg-no-repeat bg-neutral-950"
+            className="hidden md:block w-full aspect-[3/4] bg-cover bg-top bg-no-repeat bg-neutral-100"
             style={{ backgroundImage: "url('/images/IMG_1316_Original%202.jpg')" }}
           />
 
           <div>
-            <h3 className="text-sm md:text-2xl font-black uppercase">Roles</h3>
-            <p className="text-[10px] text-white/60 mb-3 mt-1">役割</p>
-            <ul className="space-y-2 text-[10px] md:text-xs text-white font-light leading-loose">
-              <li>Video Producer<span className="block text-white/60 text-[9px]">動画プロデューサー</span></li>
-              <li>Film Editor<span className="block text-white/60 text-[9px]">映像編集</span></li>
-              <li>Video Team Leader<span className="block text-white/60 text-[9px]">動画チームリーダー</span></li>
-              <li>Content Creator<span className="block text-white/60 text-[9px]">コンテンツ制作</span></li>
+            <h3 className="text-sm md:text-2xl font-black uppercase text-neutral-900">Roles</h3>
+            <p className="text-[10px] text-neutral-500 mb-3 mt-1">役割</p>
+            <ul className="space-y-2 text-[10px] md:text-xs text-neutral-900 font-light leading-loose">
+              <li>Video Producer<span className="block text-neutral-500 text-[9px]">動画プロデューサー</span></li>
+              <li>Film Editor<span className="block text-neutral-500 text-[9px]">映像編集</span></li>
+              <li>Video Team Leader<span className="block text-neutral-500 text-[9px]">動画チームリーダー</span></li>
+              <li>Content Creator<span className="block text-neutral-500 text-[9px]">コンテンツ制作</span></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-sm md:text-2xl font-black uppercase">Skills</h3>
-            <p className="text-[10px] text-white/60 mb-3 mt-1">得意分野</p>
-            <ul className="space-y-2 text-[10px] md:text-xs text-white font-light leading-loose">
-              <li>Sports Doc<span className="block text-white/60 text-[9px]">スポーツドキュメンタリー</span></li>
-              <li>Commercial<span className="block text-white/60 text-[9px]">プロモーション映像</span></li>
-              <li>Color Grading<span className="block text-white/60 text-[9px]">カラーグレーディング</span></li>
-              <li>Gimbal<span className="block text-white/60 text-[9px]">ジンバル撮影</span></li>
-              <li>Editing<span className="block text-white/60 text-[9px]">映像編集</span></li>
+            <h3 className="text-sm md:text-2xl font-black uppercase text-neutral-900">Skills</h3>
+            <p className="text-[10px] text-neutral-500 mb-3 mt-1">得意分野</p>
+            <ul className="space-y-2 text-[10px] md:text-xs text-neutral-900 font-light leading-loose">
+              <li>Sports Doc<span className="block text-neutral-500 text-[9px]">スポーツドキュメンタリー</span></li>
+              <li>Commercial<span className="block text-neutral-500 text-[9px]">プロモーション映像</span></li>
+              <li>Color Grading<span className="block text-neutral-500 text-[9px]">カラーグレーディング</span></li>
+              <li>Gimbal<span className="block text-neutral-500 text-[9px]">ジンバル撮影</span></li>
+              <li>Editing<span className="block text-neutral-500 text-[9px]">映像編集</span></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-sm md:text-2xl font-black uppercase">Interests</h3>
-            <p className="text-[10px] text-white/60 mb-3 mt-1">興味・関心</p>
-            <ul className="space-y-2 text-[10px] md:text-xs text-white font-light leading-loose">
-              <li>Sports<span className="block text-white/60 text-[9px]">スポーツ全般</span></li>
-              <li>Documentary<span className="block text-white/60 text-[9px]">ドキュメンタリー</span></li>
-              <li>Action Sports<span className="block text-white/60 text-[9px]">アクションスポーツ</span></li>
-              <li>Athlete Stories<span className="block text-white/60 text-[9px]">アスリートの物語</span></li>
-              <li>Storytelling<span className="block text-white/60 text-[9px]">ストーリーテリング</span></li>
+            <h3 className="text-sm md:text-2xl font-black uppercase text-neutral-900">Interests</h3>
+            <p className="text-[10px] text-neutral-500 mb-3 mt-1">興味・関心</p>
+            <ul className="space-y-2 text-[10px] md:text-xs text-neutral-900 font-light leading-loose">
+              <li>Sports<span className="block text-neutral-500 text-[9px]">スポーツ全般</span></li>
+              <li>Documentary<span className="block text-neutral-500 text-[9px]">ドキュメンタリー</span></li>
+              <li>Action Sports<span className="block text-neutral-500 text-[9px]">アクションスポーツ</span></li>
+              <li>Athlete Stories<span className="block text-neutral-500 text-[9px]">アスリートの物語</span></li>
+              <li>Storytelling<span className="block text-neutral-500 text-[9px]">ストーリーテリング</span></li>
             </ul>
           </div>
         </div>
@@ -63,33 +63,33 @@ export default function ProfileGrid() {
           <div className="hidden md:block" />
 
           <div>
-            <h3 className="text-sm md:text-2xl font-black uppercase">Software</h3>
-            <p className="text-[10px] text-white/60 mb-3 mt-1">機材・ソフト</p>
-            <ul className="space-y-2 text-[10px] md:text-xs text-white font-light leading-loose">
+            <h3 className="text-sm md:text-2xl font-black uppercase text-neutral-900">Software</h3>
+            <p className="text-[10px] text-neutral-500 mb-3 mt-1">機材・ソフト</p>
+            <ul className="space-y-2 text-[10px] md:text-xs text-neutral-900 font-light leading-loose">
               <li>Final Cut Pro X</li>
-              <li>Sony FX3<span className="block text-white/60 text-[9px]">メインカメラ</span></li>
+              <li>Sony FX3<span className="block text-neutral-500 text-[9px]">メインカメラ</span></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-sm md:text-2xl font-black uppercase">Links</h3>
-            <p className="text-[10px] text-white/60 mb-3 mt-1">リンク</p>
+            <h3 className="text-sm md:text-2xl font-black uppercase text-neutral-900">Links</h3>
+            <p className="text-[10px] text-neutral-500 mb-3 mt-1">リンク</p>
             <ul className="space-y-2 text-[10px] md:text-xs font-light leading-loose">
               <li>
                 <a href="https://www.instagram.com/tatsubow2023" target="_blank" rel="noopener noreferrer"
-                  className="text-white hover:text-white/60 transition-colors duration-300">
+                  className="text-neutral-900 hover:text-neutral-500 transition-colors duration-300">
                   Instagram
                 </a>
               </li>
               <li>
                 <a href="https://vimeo.com/user245591486" target="_blank" rel="noopener noreferrer"
-                  className="text-white hover:text-white/60 transition-colors duration-300">
+                  className="text-neutral-900 hover:text-neutral-500 transition-colors duration-300">
                   Vimeo
                 </a>
               </li>
               <li>
                 <a href="mailto:1988tatsu0514@gmail.com"
-                  className="text-white hover:text-white/60 transition-colors duration-300">
+                  className="text-neutral-900 hover:text-neutral-500 transition-colors duration-300">
                   Email
                 </a>
               </li>
@@ -97,18 +97,18 @@ export default function ProfileGrid() {
           </div>
 
           <div>
-            <h3 className="text-sm md:text-2xl font-black uppercase">Based In</h3>
-            <p className="text-[10px] text-white/60 mb-3 mt-1">拠点</p>
-            <ul className="space-y-2 text-[10px] md:text-xs text-white font-light leading-loose">
-              <li>Kanagawa, Japan<span className="block text-white/60 text-[10px]">神奈川県</span></li>
-              <li>Shonan<span className="block text-white/60 text-[10px]">湘南エリア</span></li>
+            <h3 className="text-sm md:text-2xl font-black uppercase text-neutral-900">Based In</h3>
+            <p className="text-[10px] text-neutral-500 mb-3 mt-1">拠点</p>
+            <ul className="space-y-2 text-[10px] md:text-xs text-neutral-900 font-light leading-loose">
+              <li>Kanagawa, Japan<span className="block text-neutral-500 text-[10px]">神奈川県</span></li>
+              <li>Shonan<span className="block text-neutral-500 text-[10px]">湘南エリア</span></li>
             </ul>
           </div>
         </div>
 
         {/* タグライン */}
-        <div className="border-t border-neutral-900 py-6">
-          <p className="text-[10px] md:text-xs tracking-[0.2em] text-white/60 uppercase">
+        <div className="border-t border-neutral-200 py-6">
+          <p className="text-[10px] md:text-xs tracking-[0.2em] text-neutral-400 uppercase">
             |VIDEO PRODUCER|FILM EDITOR|VIDEO TEAM LEADER|CONTENT CREATOR|
           </p>
         </div>
@@ -116,9 +116,9 @@ export default function ProfileGrid() {
         {/* About me + Contact */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24 pt-8">
           <div>
-            <h3 className="text-xl md:text-3xl font-black uppercase">About me</h3>
-            <p className="text-xs text-white/60 mb-5 mt-1">プロフィール</p>
-            <p className="text-xs text-white font-light leading-[2.2]">
+            <h3 className="text-xl md:text-3xl font-black uppercase text-neutral-900">About me</h3>
+            <p className="text-xs text-neutral-500 mb-5 mt-1">プロフィール</p>
+            <p className="text-xs text-neutral-700 font-light leading-[2.2]">
               12年間の消防士としてのキャリアを経て、映像の世界へ転身。
               命がけの現場で培った一瞬の緊迫感や人間の本質的な熱量を見極める洞察力を武器に、
               スポーツ・アスリートの生のエネルギーをシネマティックに切り取るビデオプロデューサー。
@@ -127,9 +127,9 @@ export default function ProfileGrid() {
             </p>
           </div>
           <div>
-            <h3 className="text-xl md:text-3xl font-black uppercase">Contact</h3>
-            <p className="text-xs text-white/60 mb-5 mt-1">お問い合わせ</p>
-            <p className="text-xs text-white font-light leading-[2.2]">
+            <h3 className="text-xl md:text-3xl font-black uppercase text-neutral-900">Contact</h3>
+            <p className="text-xs text-neutral-500 mb-5 mt-1">お問い合わせ</p>
+            <p className="text-xs text-neutral-700 font-light leading-[2.2]">
               1988tatsu0514@gmail.com<br />
               instagram.com/tatsubow2023<br />
               vimeo.com/user245591486<br />

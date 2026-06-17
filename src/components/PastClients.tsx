@@ -18,25 +18,25 @@ const clients = [
 
 export default function PastClients() {
   return (
-    <section className="px-8 md:px-24 py-16 md:py-40 border-t border-neutral-950">
+    <section className="px-8 md:px-24 py-16 md:py-40 border-t border-neutral-200">
       <div className="max-w-7xl mx-auto">
 
         <div className="flex items-baseline justify-between mb-10 md:mb-20">
           <div className="flex items-center gap-3">
-            <div className="w-2 h-2 bg-neutral-500" />
-            <p className="text-xs tracking-[0.25em] uppercase text-white">
+            <div className="w-2 h-2 bg-neutral-400" />
+            <p className="text-xs tracking-[0.25em] uppercase text-neutral-900">
               Clients &amp; Athletes
             </p>
           </div>
-          <p className="text-xs tracking-[0.25em] uppercase text-white/60">
-            & More
+          <p className="text-xs tracking-[0.25em] uppercase text-neutral-400">
+            &amp; More
           </p>
         </div>
 
         <div className="flex flex-wrap gap-x-4 gap-y-3 md:grid md:grid-cols-4 md:gap-x-8 md:gap-y-8">
           {clients.map((client) => (
             <div key={client} className="group">
-              <span className="text-[10px] md:text-xs tracking-[0.08em] md:tracking-[0.12em] uppercase font-light text-white opacity-20 group-hover:opacity-100 transition-all duration-300 cursor-default">
+              <span className="text-[10px] md:text-xs tracking-[0.08em] md:tracking-[0.12em] uppercase font-light text-neutral-900 opacity-20 group-hover:opacity-100 transition-all duration-300 cursor-default">
                 {client}
               </span>
             </div>

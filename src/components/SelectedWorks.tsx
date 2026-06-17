@@ -44,17 +44,17 @@ export default async function SelectedWorks() {
   );
 
   return (
-    <section id="works" className="px-8 md:px-24 py-16 md:py-40 border-t border-neutral-950">
+    <section id="works" className="px-8 md:px-24 py-16 md:py-40 border-t border-neutral-200">
       <div className="max-w-7xl mx-auto">
 
         <div className="flex items-baseline justify-between mb-10 md:mb-20">
           <div className="flex items-center gap-3">
-            <div className="w-2 h-2 bg-neutral-500" />
+            <div className="w-2 h-2 bg-neutral-400" />
             <p className="text-xs tracking-[0.25em] uppercase text-neutral-500">
               Selected Works
             </p>
           </div>
-          <p className="text-xs tracking-[0.25em] uppercase text-neutral-700">
+          <p className="text-xs tracking-[0.25em] uppercase text-neutral-400">
             {works.length} Projects
           </p>
         </div>

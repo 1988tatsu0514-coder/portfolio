@@ -23,7 +23,7 @@ export function WorkCard({ vimeoId, title, role, year, thumbnail }: WorkCardProp
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative aspect-video overflow-hidden bg-neutral-950">
+      <div className="relative aspect-video overflow-hidden bg-neutral-100">
         {thumbnail && (
           <Image
             src={thumbnail}
@@ -54,14 +54,14 @@ export function WorkCard({ vimeoId, title, role, year, thumbnail }: WorkCardProp
       </div>
 
       <div className="mt-5">
-        <h3 className="text-sm md:text-base tracking-[0.15em] uppercase font-light text-white group-hover:text-white transition-colors duration-300 mb-2">
+        <h3 className="text-sm md:text-base tracking-[0.15em] uppercase font-light text-neutral-900 group-hover:text-neutral-500 transition-colors duration-300 mb-2">
           {title}
         </h3>
         <div className="flex items-center justify-between">
-          <p className="text-xs tracking-[0.15em] uppercase text-white">
+          <p className="text-xs tracking-[0.15em] uppercase text-neutral-700">
             {role}
           </p>
-          <p className="text-xs tracking-[0.1em] text-white/60">{year}</p>
+          <p className="text-xs tracking-[0.1em] text-neutral-400">{year}</p>
         </div>
       </div>
     </a>
